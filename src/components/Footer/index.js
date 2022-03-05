@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 import { appBrandName } from "../../config";
 import { NavlinkContent } from "../AppNavbar";
 import Copy from "./Copy";
+import { FaGithub } from "react-icons/fa";
 
 const Footer = () => <footer>
     <Container 
@@ -10,7 +11,8 @@ const Footer = () => <footer>
         style={{ fontSize: "0.75rem" }}
         >
         <Copy appBrandName={appBrandName()} />
-        <div className="d-flex"><NavlinkContent /></div>
+        <div><a href="https://github.com/wellspr/create-ssr-react-app"><FaGithub color="black" /></a></div>
+        <div className="d-flex"><NavlinkContent fontColor={"black"} /></div>
     </Container>
 </footer>;
 

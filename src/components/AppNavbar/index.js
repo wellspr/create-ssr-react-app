@@ -19,7 +19,7 @@ import { topNavbarLinks } from "./topNavbarLinks";
 import { appBrandName } from "../../config";
 
 // Top navbar links (show both on large and small screens)
-export const NavlinkContent = () => topNavbarLinks().map(link => {
+export const NavlinkContent = ({ fontColor }) => topNavbarLinks().map(link => {
     const location = useLocation();
     const active = (location.pathname === link.path) ? true : false;
     return <Nav.Link 
@@ -27,7 +27,7 @@ export const NavlinkContent = () => topNavbarLinks().map(link => {
         key={link.key}
         href={link.path}
         >
-        {link.label}
+        <span style={{ color: fontColor }}>{link.label}</span>
     </Nav.Link>
 });
 
