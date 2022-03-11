@@ -10,4 +10,8 @@ export const corsConfig = {
 
 export const appBrandName = () => {
     return "SSR React App"
-}
+};
+
+export const githubLink = () => {
+    return "https://github.com/wellspr/create-ssr-react-app";
+};
