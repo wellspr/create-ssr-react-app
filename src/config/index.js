@@ -1,4 +1,6 @@
-const origin = "http://localhost:4000";
+export const port = 4000;
+
+const origin = `http://localhost:${port}`;
 
 export const corsConfig = {
     origin: origin,

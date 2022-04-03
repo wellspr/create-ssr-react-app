@@ -9,7 +9,7 @@ import compression from "compression";
 import { handler } from "./routes/handler";
 
 // config
-import {corsConfig} from "./config";
+import { port, corsConfig } from "./config";
 
 // Middleware
 // import {} from "./middlewares/uploadFiles";
@@ -28,8 +28,6 @@ app.use(compression());
 
 app.get("*", handler);
 
-const port = process.env.PORT || 4000;
-
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
     console.log(`Server listening on port ${port}`);
 });
