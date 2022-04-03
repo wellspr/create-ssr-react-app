@@ -1,6 +1,6 @@
 {
   "name": "create-ssr-react-app",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A server side rendered React app starter boilerplate.",
   "bin": "./bin/cli.js",
   "main": "build/js/server.js",
