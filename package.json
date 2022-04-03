@@ -1,7 +1,8 @@
 {
-  "name": "ssr-react-app",
+  "name": "create-ssr-react-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "A server side rendered React app starter boilerplate.",
+  "bin": "./bin/cli.js",
   "main": "build/js/server.js",
   "scripts": {
     "start": "node build/js/server.js",
@@ -19,9 +20,13 @@
     "clean:dev": "(rm -rf public/dist) && (rm -rf build)",
     "clean:prod": "(rm -rf prod)"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wellspr/create-ssr-react-app"
+  },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Paulo Wells",
+  "license": "MIT",
   "dependencies": {
     "@babel/cli": "^7.16.7",
     "@babel/core": "^7.16.7",

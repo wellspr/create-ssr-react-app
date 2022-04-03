@@ -1,12 +1,21 @@
 # SSR React App
 
-Server side rendered React app.
+A server side rendered React app starter boilerplate.
+
+# Repository
+
+    https://github.com/wellspr/create-ssr-react-app
+
+
+# Install 
+
+    npx create-ssr-react-app <project-name>
 
 # Run
 
-Download dependencies
+    cd <project-name> && npm start
 
-    npm install
+Wait until build finishes then go to [http://localhost:4000](http://localhost:4000)
 
 ## Starting a development server
 At the root of the project run
